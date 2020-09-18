@@ -1,0 +1,1 @@
+This is a simple aim training game designed to improve accuracy of mouse clicks on the screen. Requires pygame and run thorugh the main method on the Aimbooster.py file. 
