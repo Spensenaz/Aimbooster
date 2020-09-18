@@ -50,7 +50,7 @@ class Aimbooster:
     def check_end_events(self): # Allows exit from program from both quit and X menu button. 
         for event in pygame.event.get():
             if event.type == QUIT:
-                        pygame.QUIT()
+                        pygame.quit()
                         sys.exit()
             if event.type == pygame.MOUSEBUTTONDOWN:
                     mouse_pos = event.pos 
@@ -61,13 +61,13 @@ class Aimbooster:
                         self.run_game()
                         break
                     elif self.end_menu.end_button.collidepoint(mouse_pos):
-                        pygame.QUIT()
+                        pygame.quit()
                         sys.exit()
 
     def check_start_events(self): # checks input from the start screen
         for event in pygame.event.get():
             if event.type == QUIT:
-                pygame.QUIT()
+                pygame.quit()
                 sys.exit()
             if event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = event.pos
@@ -92,7 +92,7 @@ class Aimbooster:
     def check_instr_events(self):
         for event in pygame.event.get():
             if event.type == QUIT:
-                pygame.QUIT()
+                pygame.quit()
                 sys.exit()
             if event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = event.pos
@@ -102,7 +102,7 @@ class Aimbooster:
     def check_events(self): #Checks for input
             for event in pygame.event.get():
                 if event.type == QUIT:
-                        pygame.QUIT()
+                        pygame.quit()
                         sys.exit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     mouse_pos = event.pos 
